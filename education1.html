@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+	
+	    h1 {
+		    font-family: 'Garamond', cursive;
+            font-size: 32px; /* Larger font size for headings */
+            color: #ff0066; /* Pink color for headings */
+            text-align: center; /* Center align heading */
+            margin-bottom: 20px; /* Space below heading */
+        }
+		
+		.footer{
+			font-size: 18px; /* Increased font size for paragraphs */
+            margin-bottom: 15px; /* Space between paragraphs */
+            text-align: center; /* Justify text for a cleaner look */
+		}
+	    
+        nav {
+             background-color: #000000;
+             padding: 10px 0;
+        }
+
+        nav ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             text-align: center;
+        }
+
+        nav ul li {
+             display: inline;
+        }
+
+        nav ul li a {
+             display: inline-block;
+             padding: 10px 20px;
+             color: white;
+             text-decoration: none;
+        }
+
+        nav ul li a:hover {
+             background-color: #d90052;
+             border-radius: 5px;
+        }
+	
+        body {
+            background-color: #ffe6f3; /* Soft pink background color */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Aesthetic font family */
+            color: #333; /* Text color */
+            padding: 20px; /* Padding for content */
+            line-height: 1.6; /* Improved readability with increased line height */
+            max-width: 800px; /* Limit the width of the content */
+            margin: 0 auto; /* Center the content horizontally */
+            border-radius: 10px; /* Rounded corners for the content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+            padding: 30px; /* Increased padding for content */
+        }
+        .timeline-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            position: relative; /* Make the container relative */
+        }
+        .timeline-img {
+            max-width: 150px;
+            height: auto;
+            margin: 20px;
+            position: relative; /* Make the image relative */
+        }
+        .timeline-img::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid black; /* Adjust color and size as needed */
+            left: calc(100% + 10px); /* Position the arrow to the right of the image */
+        }
+        .timeline-img:first-child::before {
+            display: none; /* Hide the arrow for the first image */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: lightblue;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+		
+		/* BMI Calculator Styles */
+        fieldset {
+            border: none;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff0066;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d90052;
+        }
+        .result {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .result p {
+            margin-bottom: 10px;
+        }
+		
+		.container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+         .result {
+          margin-top: 20px;
+        }
+		
+		
+
+    </style>
+</head>
+<body>
+
+    <nav>
+         <ul>
+            <li><a class="button" href="http://localhost/dashboard/Project1/myself.php">About Me</a></li>
+            <li><a class="button" href="http://localhost/dashboard/Project1/passion.php">Passion</a></li>
+            <li><a class="button" href="http://localhost/dashboard/Project1/education.php">Education</a></li>
+			<li><a class="button" href="http://localhost/dashboard/Project1/gallery.php">Photo Gallery</a></li>
+            <li><a class="button" href="http://localhost/dashboard/Project1/comment.php">Comment</a></li>
+        </ul>
+    </nav>
+	
+    <h1>Education</h1>
+    <h2>Timeline of Education</h2>
+    <div class="timeline-container">
+        <img class="timeline-img" src="sk alam megah 3.jpg" alt="SK Alam Megah 3">
+        <img class="timeline-img" src="smk alam megah 2.png" alt="SMK Alam Megah 2">
+        <img class="timeline-img" src="kmpp.jpg" alt="Kolej Matrikulasi Pulau Pinang">
+        <img class="timeline-img" src="uitm.png" alt="UiTM Shah Alam">
+    </div>
+    
+    <h2>Degree Session</h2>
+	
+	<p><strong>Course</strong>: Bachelor in Computer Science (Hons.) Multimedia Computing</p>
+	
+	<p><strong>Position</strong>: Bendahari Multimedia Computing Society (MMCS)</p>
+	
+	<section id="activity">
+	    <p><strong>Activity</strong>:-</p>
+	       <ul>
+            <li>Kursus Pengurusan Organisasi Siri 1/2024</li>
+			<li>Program Ramadan MCD x Harian Metro x UITM </li>
+            <li>Bengkel Inovasi 1.0: Empowering Student Entrepeneurs </li>
+			<li>Online Webinar Computer Graphics from the Industry's Perspective</li>
+        </ul>
+	</section>
+	
+    <section id="curriculum">
+        <p><strong>Curriculum:-</strong></p>
+        <p>The curriculum covers a wide range of topics, including:</p>
+        <ul>
+            <li>Programming languages such as Java, C++, and Python</li>
+            <li>Web Development Technologies including HTML, CSS, and JavaScript</li>
+			<li>Virtual Reality</li>
+			<li>Temporal Media Processing</li>
+            <li>Database Management Systems</li>
+            <li>Computer Graphics and Animation</li>
+            <li>Fundamentals of Multimedia Computing</li>
+			<li>Computer Game Design and Development</li>
+        </ul>
+    </section>
+
+    <section id="career-options">
+        <p><strong>Career Options:-</strong></p>
+        <p>Graduates of this program can pursue various career paths, including:</p>
+        <ul>
+		    <li>Animators</li>
+            <li>Web Developer</li>
+            <li>Game Developer</li>
+            <li>UI/UX Designer</li>
+			<li>Multimedia Programmer</li>
+            <li>Audio-visual Technician</li>
+            <li>Multimedia Content Creator</li>
+        </ul>
+    </section>
+
+    <br>
+	
+    <table>
+        <caption>Timetable for Semester 4</caption>
+        <tr>
+            <th>Day</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thurday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>8-10</td>
+            <td>CSC541</td>
+            <td>CSC541</td>
+            <td>ELC650</td>
+            <td>***</td>
+            <td>CSC584</td>
+        </tr>
+        <tr>
+            <td>10-12</td>
+            <td>CSC566</td>
+            <td>***</td>
+            <td>***</td>
+            <td>CSC508</td>
+            <td>CSC577</td>
+        </tr>
+        <tr>
+            <td>12-2</td>
+            <td>***</td>
+            <td>CSC566</td>
+            <td>***</td>
+            <td>***</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2-4</td>
+            <td>CSC584</td>
+            <td>TAC451</td>
+            <td>***</td>
+            <td>***</td>
+            <td>***</td>
+        </tr>
+        <tr>
+            <td>4-6</td>
+            <td>***</td>
+            <td>CSC577</td>
+            <td>CSC508</td>
+            <td>***</td>
+            <td>***</td>
+        </tr>
+    </table>
+	
+	<br>
+        <!-- BMI Calculator -->
+   <p><strong><center>Calculate your Body Mass Index (BMI)</center></strong></p>
+
+   <div class="container">
+    <fieldset>
+        <label for="weight">Weight (in kg):</label>
+        <input type="text" id="weight" />
+
+        <br />
+
+        <label for="height">Height (in meters):</label>
+        <input type="text" id="height" />
+
+        <br />
+
+        <button onclick="calculate();">Get BMI</button>
+        <button onclick="clearFields();">Clear</button>
+    </fieldset>
+
+    <div class="result">
+        <p>Your BMI is <span id="score"></span>.</p>
+        <p>Your body type is <span id="type"></span>.</p>
+    </div>
+   </div>
+
+   <script src="script.js"></script>
+	
+	<div class ="footer">
+        <p>&copy; 2024 CSC541 ERYNA'S PORTFOLIO</p>
+	</div>
+	
+</body>
+</html>

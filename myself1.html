@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Myself</title>
+    <style>
+	
+	    	/* Navigation Styles */
+     nav {
+        background-color: #000000;
+        padding: 10px 0;
+    }
+
+         nav ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             text-align: center;
+        }
+
+         nav ul li {
+             display: inline;
+        }
+
+        nav ul li a {
+             display: inline-block;
+             padding: 10px 20px;
+             color: white;
+             text-decoration: none;
+        }
+
+        nav ul li a:hover {
+             background-color: #d90052;
+             border-radius: 5px;
+        }
+
+        body {
+            background-color: #ffe6f3; /* Soft pink background color */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Aesthetic font family */
+            color: #333; /* Text color */
+            padding: 20px; /* Padding for content */
+            line-height: 1.6; /* Improved readability with increased line height */
+            max-width: 800px; /* Limit the width of the content */
+            margin: 0 auto; /* Center the content horizontally */
+            border-radius: 10px; /* Rounded corners for the content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+            padding: 30px; /* Increased padding for content */
+        }
+        h1 {
+		    font-family: 'Garamond', cursive;
+            font-size: 32px; /* Larger font size for headings */
+            color: #ff0066; /* Pink color for headings */
+            text-align: center; /* Center align heading */
+            margin-bottom: 20px; /* Space below heading */
+        }
+        p {
+            font-size: 18px; /* Increased font size for paragraphs */
+            margin-bottom: 15px; /* Space between paragraphs */
+            text-align:=justify; /* Justify text for a cleaner look */
+        }
+		
+		.footer{
+			font-size: 18px; /* Increased font size for paragraphs */
+            margin-bottom: 15px; /* Space between paragraphs */
+            text-align: center; /* Justify text for a cleaner look */
+		}
+
+        ul {
+            list-style-type: none; /* Remove default bullet points */
+            padding-left: 0; /* Remove default padding for lists */
+            margin-bottom: 20px; /* Space between lists */
+        }
+        li:before {
+            content: "★"; /* Unicode star symbol as bullet point */
+            color: #ff0066; /* Pink color for stars */
+            margin-right: 10px; /* Space between star and text */
+        }
+		.gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+		.icon-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+
+		.fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align:center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        .fa-snapchat-ghost {
+             background: #fffc00;
+             color: white;
+             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+	
+    </style>
+</head>
+<body>
+
+    <nav>
+         <ul>
+            <li><a class="button" href="http://localhost/dashboard/Project1/myself.php">About Me</a></li>
+            <li><a class="button" href="http://localhost/dashboard/Project1/passion.php">Passion</a></li>
+            <li><a class="button" href="http://localhost/dashboard/Project1/education.php">Education</a></li>
+			<li><a class="button" href="http://localhost/dashboard/Project1/gallery.php">Photo Gallery</a></li>
+            <li><a class="button" href="http://localhost/dashboard/Project1/comment.php">Comment</a></li>
+        </ul>
+    </nav>
+	
+    <h1>About Me</h1>
+    <img src="nur_eryna_syaqira.jpg" alt="Nur Eryna Syaqira" style="display: block; margin: 0 auto; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 30%; height: auto;"> <!-- Centered image with rounded corners and shadow -->
+    <p><strong>Name:</strong> Nur Eryna Syaqira binti Zulazri</p>
+    <p><strong>Age:</strong> 22 years</p>
+    <p><strong>Birth date:</strong> November 16, 2002</p>
+    <p><strong>Location:</strong> Putra Heights, Subang Jaya</p>
+
+    <p>Hi there! I'm Nur Eryna Syaqira, a 22-year-old enthusiast from Putra Heights, Subang Jaya. As the eldest among three siblings, I've embraced responsibility and leadership from an early age.</p>
+
+    <ul>
+        <li>First child from three siblings</li>
+        <li>Favorite color: Pink</li>
+        <li>Hobby: Reading</li>
+    </ul>
+	
+	<p>
+        My passion for reading knows no bounds. I immerse myself in novels of
+        various genres, building a personal library filled with both physical 
+        books and e-books. Always seeking new adventures, I eagerly anticipate
+        events like book fairs and conventions, where I can indulge in my love
+        for literature. One of my fondest memories is attending the annual 
+        Kuala Lumpur International Book Fair, where I discovered new authors 
+        and titles that expanded my literary horizons. My journey with books 
+        began in primary school, and since then, reading has been a constant 
+        source of joy and inspiration in my life.
+    </p>
+    
+    <div class="gallery">
+    <img src="book1.jpg" alt="Image 1">
+    <img src="book2.jpg" alt="Image 2">
+    <img src="book3.jpg" alt="Image 3">
+    <img src="book4.jpg" alt="Image 4">
+    <img src="book5.jpg" alt="Image 5">
+    </div>
+
+    <p>When it comes to strengths, resilience is my secret weapon. Challenges don't scare me; they fuel my determination to grow and succeed. However, like many, I'm learning to tame my inner perfectionist and embrace imperfection as part of the journey.</p>
+
+    <p>My ultimate goal? Balancing a successful career with unwavering mental health. I believe that true success is not just about professional achievements but also about finding harmony and fulfillment in every aspect of life.</p>
+
+    <p>My values are my guiding stars: honesty, kindness, self-esteem, and effective communication. These principles shape my decisions and interactions, both personally and professionally.</p>
+
+    <ul>
+        <li><strong>Values:</strong> Honesty, Kindness, Self-esteem, Communicative</li>
+    </ul>
+
+    <p>Self-care isn't just a buzzword for me—it's a non-negotiable. I prioritize my physical, mental, and emotional well-being through regular exercise, mindfulness practices, and quality time with loved ones. Flexibility and adaptability are key as I navigate life's twists and turns, ensuring my self-care remains effective and sustainable.</p>
+	<br>
+	<div class="icon-container">
+	<a href="https://x.com/erynasyqra/status/1171754123709972480?s=46&t=QR-P-AL9FPMmKq4QTqFQ-w#" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/erynasyqra?igsh=MXZ0dzJnaGg0Y204ZQ%3D%3D&utm_source=qr" class="fa fa-instagram"></a>
+    <a href="https://www.snapchat.com/add/erynasss?share_id=B5-9EwyeSlmww_4qkYrp_g&locale=en_AF@calendar=gregorian" class="fa fa-snapchat-ghost"></a>
+	</div>
+	
+	<div class ="footer">
+        <p>&copy; 2024 CSC541 ERYNA'S PORTFOLIO</p>
+	</div>
+	
+</body>
+</html>

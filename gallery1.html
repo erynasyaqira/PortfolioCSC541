@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+	
+	    p {
+            font-size: 18px; /* Increased font size for paragraphs */
+            margin-bottom: 15px; /* Space between paragraphs */
+            text-align:center; /* Justify text for a cleaner look */
+        }
+		
+		.footer{
+			font-size: 18px; /* Increased font size for paragraphs */
+            margin-bottom: 15px; /* Space between paragraphs */
+            text-align: center; /* Justify text for a cleaner look */
+		}
+		
+	    nav {
+             background-color: #000000;
+             padding: 10px 0;
+        }
+
+        nav ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             text-align: center;
+        }
+
+        nav ul li {
+             display: inline;
+        }
+
+        nav ul li a {
+             display: inline-block;
+             padding: 10px 20px;
+             color: white;
+             text-decoration: none;
+        }
+
+        nav ul li a:hover {
+             background-color: #d90052;
+             border-radius: 5px;
+        }
+		
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffcccc; /* Pink background */
+            margin: 0;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+        }
+		.gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+         <ul>
+            <li><a class="button" href="http://localhost/dashboard/Project1/myself.php">About Me</a></li>
+            <li><a class="button" href="http://localhost/dashboard/Project1/passion.php">Passion</a></li>
+            <li><a class="button" href="http://localhost/dashboard/Project1/education.php">Education</a></li>
+			<li><a class="button" href="http://localhost/dashboard/Project1/gallery.php">Photo Gallery</a></li>
+            <li><a class="button" href="http://localhost/dashboard/Project1/comment.php">Comment</a></li>
+        </ul>
+    </nav>
+	
+	 <p><strong><center>ESSOLACE</center><strong></p>
+    <div class="gallery">
+        <img src="me1.jpeg" alt="Image 1">
+        <img src="me2.jpeg" alt="Image 2">
+        <img src="me4.jpeg" alt="Image 3">
+        <img src="me3.jpeg" alt="Image 4">
+        <img src="me5.jpeg" alt="Image 5">
+    </div>
+	
+    <p><strong><center>Food Edition </center><strong></p>
+    <div class="gallery">
+        <img src="food1.jpeg" alt="Image 1">
+        <img src="food2.jpeg" alt="Image 2">
+        <img src="food3.jpeg" alt="Image 3">
+        <img src="food4.jpeg" alt="Image 4">
+        <img src="food5.jpeg" alt="Image 5">
+        <img src="food6.jpeg" alt="Image 6">
+        <img src="food7.jpeg" alt="Image 7">
+        <img src="food8.jpeg" alt="Image 8">
+        <img src="food9.jpeg" alt="Image 9">
+        <img src="food10.jpeg" alt="Image 10">
+    </div>
+	
+	<p><strong><center>Dessert Edition </center><strong></p>
+    <div class="gallery"> 
+        <img src="cake1.jpeg" alt="Image 1">
+        <img src="cake2.jpeg" alt="Image 2">
+        <img src="cake3.jpeg" alt="Image 3">
+        <img src="cake4.jpeg" alt="Image 4">
+        <img src="cake5.jpeg" alt="Image 5">
+        <img src="dessert1.jpeg" alt="Image 6">
+        <img src="dessert2.jpeg" alt="Image 7">
+        <img src="dessert3.jpeg" alt="Image 8">
+        <img src="dessert4.jpeg" alt="Image 9">
+        <img src="dessert5.jpeg" alt="Image 10">
+    </div>
+	
+	<p><strong><center>Calpis Edition </center><strong></p>
+    <div class="gallery"> 
+        <img src="calpis1.jpeg" alt="Image 1">
+        <img src="calpis2.jpeg" alt="Image 2">
+        <img src="calpis3.jpeg" alt="Image 3">
+        <img src="calpis4.jpeg" alt="Image 4">
+        <img src="calpis5.jpeg" alt="Image 5">
+    </div>
+	
+	
+	
+	<div class ="footer">
+        <p>&copy; 2024 CSC541 ERYNA'S PORTFOLIO</p>
+	</div>
+	
+</body>
+</html>
